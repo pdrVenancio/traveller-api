@@ -20,9 +20,10 @@
 // });
 
 // /api/app.js
+// /api/index.js (ou use /app.js se não quiser renomear)
 const express = require("express");
 const cors = require("cors");
-const { mainRouter } = require("../routes/router"); // Ajuste o caminho se necessário
+const { mainRouter } = require("./routes/router"); // Ajuste o caminho se necessário
 
 const app = express();
 
