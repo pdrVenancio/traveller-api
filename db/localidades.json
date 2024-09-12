@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nome": "Berlim, Alemanha",
+    "latitude": 52.5186,
+    "longitude": 13.4081,
+    "precoPassagem": 200,
+    "passagens": 3,
+    "imgs": []
+  },
+  {
+    "id": 2,
+    "nome": "Tóquio, Japão",
+    "latitude": 35.6895,
+    "longitude": 139.6917,
+    "precoPassagem": 800,
+    "passagens": 5,
+    "imgs": []
+  },
+  {
+    "id": 3,
+    "nome": "Nova Iorque, EUA",
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "precoPassagem": 500,
+    "passagens": 2,
+    "imgs": []
+  },
+  {
+    "id": 4,
+    "nome": "Paris, França",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "precoPassagem": 350,
+    "passagens": 4,
+    "imgs": []
+  },
+  {
+    "id": 5,
+    "nome": "Sydney, Austrália",
+    "latitude": -33.8688,
+    "longitude": 151.2093,
+    "precoPassagem": 1200,
+    "passagens": 6,
+    "imgs": []
+  },
+  {
+    "id": 6,
+    "nome": "Cidade do Cabo, África do Sul",
+    "latitude": -33.9249,
+    "longitude": 18.4241,
+    "precoPassagem": 700,
+    "passagens": 3,
+    "imgs": []
+  },
+  {
+    "id": 7,
+    "nome": "Toronto, Canadá",
+    "latitude": 43.651,
+    "longitude": -79.347,
+    "precoPassagem": 550,
+    "passagens": 2,
+    "imgs": []
+  },
+  {
+    "id": 8,
+    "nome": "São Paulo, Brasil",
+    "latitude": -23.5505,
+    "longitude": -46.6333,
+    "precoPassagem": 250,
+    "passagens": 4,
+    "imgs": []
+  }
+]

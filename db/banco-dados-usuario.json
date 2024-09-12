@@ -1,0 +1,10 @@
+[
+  {
+    "id": 0,
+    "username": "adm",
+    "role": "admin",
+    "email": "adm@gmail.com",
+    "password": "$2b$10$Cz.bvKCMkbqo0E2nXRjzleI3m9QchJuIQX.Zrr/7gNFdaOhbk2ZCm",
+    "tickets": []
+  }
+]
