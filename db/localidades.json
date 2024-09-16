@@ -61,14 +61,5 @@
     "precoPassagem": 550,
     "passagens": 2,
     "imgs": []
-  },
-  {
-    "id": 8,
-    "nome": "São Paulo, Brasil",
-    "latitude": -23.5505,
-    "longitude": -46.6333,
-    "precoPassagem": 250,
-    "passagens": 4,
-    "imgs": []
   }
 ]
