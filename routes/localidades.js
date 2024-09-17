@@ -242,7 +242,7 @@ localidadeRouter.put('/', isAdmin, (req, res) => {
 
 // a rota delete apaga uma localidade ao se passar um id
 localidadeRouter.delete('/:id', isAdmin, (req, res) => {
-    try {
+    // try {
         console.log(1)
         const { id } = req.params;
 console.log(2)
@@ -260,10 +260,10 @@ console.log(6)
         console.log(8)
 
         res.status(204).send('Localidade Removida!');
-    } catch (error) {
-        console.error('Erro ao remover localidade:', error);
-        res.status(500).send('Erro interno do servidor.');
-    }
+    // } catch (error) {
+    //     console.error('Erro ao remover localidade:', error);
+    //     res.status(500).send('Erro interno do servidor.');
+    // }
 });
 
 module.exports = { localidadeRouter };
