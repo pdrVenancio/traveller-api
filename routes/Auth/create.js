@@ -9,9 +9,7 @@ const usuariosCadastrados = JSON.parse(fs.readFileSync(bdPath, {encoding: 'utf-8
 
 const createRouter = Router()
 
-createRouter.post(
-  '/',
-  async (req, res) => {
+createRouter.post('/',  async (req, res) => {
     const {username, email, password} = req.body; 
     let userIds = [];
     for (let users of usuariosCadastrados){
@@ -39,7 +37,5 @@ createRouter.post(
     usuariosCadastrados.push(user);
     fs.writeFileSync(bdPath,JSON.stringify(usuariosCadastrados,null,2));
     res.status(201).send(`Usuario criado com sucesso!`);
-  }
-
-)
+})
 module.exports = { createRouter }
