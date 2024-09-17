@@ -21,6 +21,12 @@
 
 // /api/app.js
 // /api/index.js (ou use /app.js se não quiser renomear)
+const cors = require('cors');
+ 
+// Permitir requisições de um domínio específico
+app.use(cors({
+    origin: 'https://main--subtle-klepon-ef900c.netlify.app'
+}));
 const express = require("express");
 const cors = require("cors");
 const { mainRouter } = require("./routes/router"); // Ajuste o caminho se necessário
