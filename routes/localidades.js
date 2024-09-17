@@ -243,16 +243,21 @@ localidadeRouter.put('/', isAdmin, (req, res) => {
 // a rota delete apaga uma localidade ao se passar um id
 localidadeRouter.delete('/:id', isAdmin, (req, res) => {
     try {
+        console.log(1)
         const { id } = req.params;
-
+console.log(2)
         const index = localidades.findIndex(p => p.id === Number(id));
-
+console.log(3)
         if (index === -1) {
+            console.log(4)
             return res.status(404).send('Localidade não encontrada.');
+            console.log(5)
         }
-
+console.log(6)
         localidades.splice(index, 1);
+        console.log(7)
         fs.writeFileSync(bdPath, JSON.stringify(localidades, null, 2));
+        console.log(8)
 
         res.status(204).send('Localidade Removida!');
     } catch (error) {
