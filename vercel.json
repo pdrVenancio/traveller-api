@@ -1,26 +1,26 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.js", 
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/app.js" 
-      }
-    ]
-    "headers": [
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/app.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
         {
-          "source": "/api/(.*)",
-          "headers": [
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://main--subtle-klepon-ef900c.netlify.app"
-            }
-          ]
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://main--subtle-klepon-ef900c.netlify.app"
         }
       ]
-  }
+    }
+  ]
+}
