@@ -29,7 +29,10 @@ app.use(express.json());
 
 // Permitir requisições de um domínio específico
 app.use(cors({
-    origin: 'https://main--subtle-klepon-ef900c.netlify.app'
+    origin: 'https://main--subtle-klepon-ef900c.netlify.app', // Domínio do seu front-end no Netlify
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Métodos permitidos
+    allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+    credentials: true // Se você precisar enviar cookies ou cabeçalhos de autenticação
 }));
 
 app.get("/", (req, res) => {
