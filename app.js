@@ -35,6 +35,8 @@ app.use(cors({
     credentials: true // Se você precisar enviar cookies ou cabeçalhos de autenticação
 }));
 
+app.options('*', cors()); 
+
 app.get("/", (req, res) => {
     res.json({ message: "Hello World" });
 });
